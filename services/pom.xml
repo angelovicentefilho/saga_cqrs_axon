@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.9</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>br.com.avf.services</groupId>
+    <artifactId>pedidos</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <!-- Envio Service -->
+        <module>envio-command</module>
+        <module>envio-common</module>
+        <module>envio-query</module>
+        <!-- Estoque Service -->
+        <module>estoque-command</module>
+        <module>estoque-common</module>
+        <module>estoque-query</module>
+        <!-- Pagamento Service -->
+        <module>pagamento-command</module>
+        <module>pagamento-common</module>
+        <module>pagamento-query</module>
+        <!-- Pedido Service -->
+        <module>pedido-command</module>
+        <module>pedido-common</module>
+        <module>pedido-query</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+
+</project>
