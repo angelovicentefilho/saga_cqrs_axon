@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+      <entry name="!*.mps" />
+      <entry name="!*.mpsr" />
+      <entry name="!*.model" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="envio-query" />
+        <module name="envio-common" />
+        <module name="pagamento-query" />
+        <module name="estoque-command" />
+        <module name="pagamento-common" />
+        <module name="estoque-query" />
+        <module name="estoque-common" />
+        <module name="envio-command" />
+        <module name="pedido-common" />
+        <module name="pedido-command" />
+        <module name="pagamento-command" />
+        <module name="pedido-query" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="envio-command" options="-parameters" />
+      <module name="envio-common" options="-parameters" />
+      <module name="envio-query" options="-parameters" />
+      <module name="estoque-command" options="-parameters" />
+      <module name="estoque-common" options="-parameters" />
+      <module name="estoque-query" options="-parameters" />
+      <module name="pagamento-command" options="-parameters" />
+      <module name="pagamento-common" options="-parameters" />
+      <module name="pagamento-query" options="-parameters" />
+      <module name="pedido-command" options="-parameters" />
+      <module name="pedido-common" options="-parameters" />
+      <module name="pedido-query" options="-parameters" />
+    </option>
+  </component>
+</project>
