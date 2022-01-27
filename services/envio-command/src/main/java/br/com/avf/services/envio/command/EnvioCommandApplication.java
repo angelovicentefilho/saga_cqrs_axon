@@ -1,0 +1,13 @@
+package br.com.avf.services.envio.command;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class EnvioCommandApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(EnvioCommandApplication.class, args);
+	}
+
+}
