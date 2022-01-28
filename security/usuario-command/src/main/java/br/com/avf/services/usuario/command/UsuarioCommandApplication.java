@@ -35,12 +35,13 @@ public class UsuarioCommandApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Usuario[] usuarios = {
-				new Usuario(gerador.getUUID(), "Angelo", "Vicente Filho", "angelovicentefilho@gmail.com", new Conta("angelo", "angelo", Arrays.asList(Funcao.PRIVILEGIO_ESCRITA, Funcao.PRIVILEGIO_LEITURA)))
-		};
-		Arrays.stream(usuarios).collect(Collectors.toList()).forEach(usuario -> this.controller.registro(RegistroUsuarioCommand.builder()
-				.id(usuario.getId())
-				.usuario(usuario)
-				.build()));
+		//Para usar isso tem que desabilitar no controller a segurança
+//		Usuario[] usuarios = {
+//				new Usuario(gerador.getUUID(), "Angelo", "Vicente Filho", "angelovicentefilho@gmail.com", new Conta("angelo", "angelo", Arrays.asList(Funcao.PRIVILEGIO_ESCRITA, Funcao.PRIVILEGIO_LEITURA)))
+//		};
+//		Arrays.stream(usuarios).collect(Collectors.toList()).forEach(usuario -> this.controller.registro(RegistroUsuarioCommand.builder()
+//				.id(usuario.getId())
+//				.usuario(usuario)
+//				.build()));
 	}
 }

@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: usuario-oauth
+  data:
+    mongodb:
+      host: localhost
+      database: usuario
+      port: 27017
+
+security:
+  oauth2:
+    client:
+      client-id: pedidoClient
+      client-secret: pedidoSecret
+      signing-key: pedidoSigningKey
+      token-validity-seconds: 300
+      refresh-token-validity-seconds: 1500
+
