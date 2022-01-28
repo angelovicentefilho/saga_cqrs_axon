@@ -1,17 +1,16 @@
 spring:
   application:
-    name: usuario-command
-
+    name: usuario-query
   data:
     mongodb:
       host: localhost
       port: 27017
-      database: user
-
+      database: contas
 security:
   oauth2:
     resource:
       jwt:
         key-value: pedidoSigningKey
+
 server:
-  port: 10001
+  port: 10002
