@@ -22,15 +22,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="envio-query" />
         <module name="envio-common" />
-        <module name="pagamento-query" />
+        <module name="pagamento-command" />
         <module name="estoque-command" />
         <module name="pagamento-common" />
         <module name="estoque-query" />
-        <module name="estoque-common" />
+        <module name="pagamento-query" />
         <module name="envio-command" />
         <module name="pedido-common" />
+        <module name="estoque-common" />
         <module name="pedido-command" />
-        <module name="pagamento-command" />
         <module name="pedido-query" />
       </profile>
     </annotationProcessing>
