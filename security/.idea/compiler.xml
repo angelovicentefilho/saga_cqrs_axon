@@ -20,9 +20,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="usuario-query" />
-        <module name="usuario-oauth" />
         <module name="usuario-command" />
+        <module name="usuario-oauth" />
+        <module name="usuario-query" />
         <module name="usuario-common" />
       </profile>
     </annotationProcessing>
