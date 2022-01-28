@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: usuario-command
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: user
+
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: pedidoSigningKey
